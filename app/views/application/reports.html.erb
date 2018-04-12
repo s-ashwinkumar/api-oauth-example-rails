@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="page-header">
+    <p class="lead">GENOME LINK example</p>
+  </div>
+    <table class="table table-bordered">
+    <tr>
+      <th>Title</th>
+      <th>Phenotype</th>
+      <th>Scores</th>
+      <th>Summary</th>
+    </tr>
+    <% @data.each do |k,v| %>
+      <tr>
+        <td><%= k %></td>
+        <td><%= v.phenotype %></td>
+        <td><%= v.scores %></td>
+        <td><%= v.summary %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
